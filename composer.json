@@ -1,0 +1,30 @@
+{
+    "config": {
+      "preferred-install": "dist"
+    },
+    "repositories" : [
+          {
+               "type" : "composer",
+               "url"  : "https://wpackagist.org"
+          }
+     ],
+     "extra" : {
+          "installer-paths" : {
+               "wp-content/plugins/{$name}/" : ["type:wordpress-plugin"],
+               "wp-content/themes/{$name}/" : ["type:wordpress-theme"]
+          }
+     },
+    "minimum-stability": "stable",
+    "require": {
+        "wpackagist-plugin/safe-svg" : "^1.6",
+        "wpackagist-plugin/wp-limit-login-attempts": "^2.6",
+        "wpackagist-plugin/akismet": "^4.0.2",
+        "wpackagist-plugin/contact-form-7": "^5.0",
+        "wpackagist-plugin/updraftplus": "^1.14",
+        "wpackagist-plugin/w3-total-cache": "^0.9.6",
+        "wpackagist-plugin/wp-smushit": "^2.7",
+        "sybrew/the-seo-framework": "^3.0",
+        "roots/wp-password-bcrypt": "^1.0"
+    }
+
+}
